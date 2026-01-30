@@ -19,6 +19,7 @@
                 type="text"
                 placeholder="Ex: xxxx"
                 name="FN"
+                id="FN"
                 value=""
                 maxlength="25"
                 required
@@ -44,8 +45,10 @@
             <td>
               <input
                 type="tel"
-                placeholder="Ex:+91 5241638879"
+                placeholder="Ex:5241638879"
                 name="PN"
+                id="PN"
+                pattern="[0-9]{10}"
                 maxlength="10"
                 required
               />
@@ -65,7 +68,8 @@
           max="65"
           step="1"
           value="21"
-          oninput="ageValue.textContent = this.value"
+            required
+    
           />
           
           <p class="tooltip">Select your age between 18-65</p>
